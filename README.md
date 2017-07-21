@@ -1,5 +1,5 @@
 # Mighty MD check 
-## synxsynx
+## synx
 
 
 ### links
