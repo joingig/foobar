@@ -23,10 +23,15 @@ Here's our logo (hover to see the title text):
 Inline-style: 
 ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
+
 Reference-style: 
 ![alt text][logo]
 
 [logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+
+![Eagle][eagle-sch-img]
+
+[eagle-sch-img]: https://github.com/joingig/foobar/blob/master/t13-lm35-ssd1306.jpg "Eagle schematic"
 
 
 ```python
