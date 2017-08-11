@@ -40,6 +40,31 @@ print s
 ```
 
 
+```c
+// ADC end int 
+ISR(ADC_vect)
+{
+// Vref = 5V, выход с датчика от 0 до 1,5V
+// max напряжение на входе 4,99V
+// k = 499/1023 = 0,487 или 26/53
+//value = value + ((ADC*26)/53);
+
+// not working yet
+// fix for 2.7V Vcc   -> 0.270  -> 24 / 89
+// value = value + ((ADC*24)/89);
+
+// Vref = 4.1V, выход с датчика от 0 до 1,5V
+// max напряжение на входе 4,99V
+// k = 401/1023 = 0,392 или 26/53
+value = value + ((ADC*39)/99);
+
+  adc_counter++;
+}
+```
+
+
+
+
 Markdown | Less | Pretty
 --- | --- | ---
 *Still* | `renders` | **nicely**
